@@ -1,0 +1,35 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="escornabot_init" id=";nYh#@TdT;0,(Be`J3V." x="66" y="-14">
+    <field name="escornabot_mode_choice"></field>
+    <next>
+      <block type="controls_if" id="9I@[OBR=:mV5F6wI^n;b">
+        <value name="IF0">
+          <block type="escornabot_getbutton" id="M-[(R_}!}L^+W6Q=?$Y;">
+            <field name="button">5</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="escornabot_turnangle" id="Z`TC9Qk+8:ZtR7l!HD^U">
+            <field name="escornabot_spin_velocity">10</field>
+            <value name="angle">
+              <shadow type="math_number" id="^gSlW;Sr8+@y|(pG|ZLm">
+                <field name="NUM">360</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="escornabot_turnangle" id="!?25j.D]66tOcUQ-Nga;">
+                <field name="escornabot_spin_velocity">10</field>
+                <value name="angle">
+                  <shadow type="math_number" id="iH5}U~8Vnt5Ha+*[fD8]">
+                    <field name="NUM">-360</field>
+                  </shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>

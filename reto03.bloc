@@ -1,0 +1,83 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="escornabot_init" id="~5q%WKquYT-JMYcqtdKR" x="209" y="54">
+    <field name="escornabot_mode_choice"></field>
+    <next>
+      <block type="variables_set_init" id="|:5VseJ(qw?zzPIzW4Ub">
+        <field name="VAR">tiempo</field>
+        <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+        <value name="VALUE">
+          <block type="math_number" id="lI*ck*9)^JZyotMV%*E~">
+            <field name="NUM">100</field>
+          </block>
+        </value>
+        <next>
+          <block type="escornabot_ledon" id="F(Vv__+|0)jsC2bPlo2m">
+            <field name="escornabot_led_choice">1</field>
+            <next>
+              <block type="escornabot_ledon" id="`U|FpA-KE.8TUlhAe%uo">
+                <field name="escornabot_led_choice">3</field>
+                <next>
+                  <block type="escornabot_ledon" id="0o$bf*:G-2GM7:n?:l+i">
+                    <field name="escornabot_led_choice">2</field>
+                    <next>
+                      <block type="escornabot_ledon" id="oh+xV5%pI8`p%4|y4f(~">
+                        <field name="escornabot_led_choice">4</field>
+                        <next>
+                          <block type="base_delay" id="?s*!,);r0NM.ai*ao?gF">
+                            <field name="unite">m</field>
+                            <value name="DELAY_TIME">
+                              <shadow type="math_number" id="}mwYQj;Z@y~P5$9%ksgw">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="variables_get" id="g*b,t|v:v$_~a3KJ/@*%">
+                                <field name="VAR">tiempo</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="escornabot_ledoff" id="w:)OWGs}HLgsB*Q:eG?p">
+                                <field name="escornabot_led_choice">1</field>
+                                <next>
+                                  <block type="escornabot_ledoff" id="AV3cqu0N4Ln8JEsC3RFV">
+                                    <field name="escornabot_led_choice">3</field>
+                                    <next>
+                                      <block type="escornabot_ledoff" id="^fxxkdVv#a!c;HTFRc(_">
+                                        <field name="escornabot_led_choice">2</field>
+                                        <next>
+                                          <block type="escornabot_ledoff" id="gYn/1FNQyi{?ma3!;z}J">
+                                            <field name="escornabot_led_choice">4</field>
+                                            <next>
+                                              <block type="base_delay" id="=p-|vvzDd0cobzLmO:s2">
+                                                <field name="unite">m</field>
+                                                <value name="DELAY_TIME">
+                                                  <shadow type="math_number" id="}mwYQj;Z@y~P5$9%ksgw">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="variables_get" id="0%2hLL*!hCq@iDctiGl1">
+                                                    <field name="VAR">tiempo</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

@@ -1,0 +1,82 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="escornabot_init" id=";nYh#@TdT;0,(Be`J3V." x="66" y="-14">
+    <field name="escornabot_mode_choice"></field>
+    <next>
+      <block type="controls_if" id="9I@[OBR=:mV5F6wI^n;b">
+        <value name="IF0">
+          <block type="escornabot_getbutton" id="M-[(R_}!}L^+W6Q=?$Y;">
+            <field name="button">5</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="escornabot_beep" id="CI!fl@tS^@T%9MN!n[L3">
+            <value name="time">
+              <shadow type="math_number" id="xp9q{JZT[*[#vdQ[mU3Q">
+                <field name="NUM">50</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="escornabot_ledon" id="Uf%ZZOhP/[}yy2Mst9$:">
+                <field name="escornabot_led_choice">4</field>
+                <next>
+                  <block type="escornabot_turnangle" id="Z`TC9Qk+8:ZtR7l!HD^U">
+                    <field name="escornabot_spin_velocity">10</field>
+                    <value name="angle">
+                      <shadow type="math_number" id="^gSlW;Sr8+@y|(pG|ZLm">
+                        <field name="NUM">360</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="escornabot_ledoff" id="`:#D9625D9.h[kR^2)5I">
+                        <field name="escornabot_led_choice">4</field>
+                        <next>
+                          <block type="escornabot_beep" id="B^/|JX+{XZMmxSb8$nhl">
+                            <value name="time">
+                              <shadow type="math_number" id="QB9]VBzvaIPz)6}t,}8:">
+                                <field name="NUM">50</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="escornabot_ledon" id="hXJpWQy!T7*jaU(g8g|9">
+                                <field name="escornabot_led_choice">2</field>
+                                <next>
+                                  <block type="escornabot_turnangle" id="!?25j.D]66tOcUQ-Nga;">
+                                    <field name="escornabot_spin_velocity">10</field>
+                                    <value name="angle">
+                                      <shadow type="math_number" id="iH5}U~8Vnt5Ha+*[fD8]">
+                                        <field name="NUM">-360</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="escornabot_ledoff" id="9gm?{x:uf(DG6b:C@tNr">
+                                        <field name="escornabot_led_choice">2</field>
+                                        <next>
+                                          <block type="escornabot_beep" id="zOpGmx?AVjILV)tz.el8">
+                                            <value name="time">
+                                              <shadow type="math_number" id="`.if/{@-r_:k]QOH?O5+">
+                                                <field name="NUM">1000</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>

@@ -1,0 +1,36 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="escornabot_init" id="pLW!a)uA173E#)=VS5QE" x="329" y="48">
+    <field name="escornabot_mode_choice"></field>
+    <next>
+      <block type="escornabot_ledon" id="l)dGq6pKgDiJ(j++n?O2">
+        <field name="escornabot_led_choice">1</field>
+        <next>
+          <block type="base_delay" id="$U|2vE#;[4KK[VQC?@Ec">
+            <field name="unite">m</field>
+            <value name="DELAY_TIME">
+              <shadow type="math_number" id="B_$fhz3M_WrzA-X].a0z">
+                <field name="NUM">100</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="escornabot_ledoff" id="/eEm+XKRLGr-b=!D,VRn">
+                <field name="escornabot_led_choice">1</field>
+                <next>
+                  <block type="base_delay" id="M3aq1/J,MN)UWej|1m+R">
+                    <field name="unite">m</field>
+                    <value name="DELAY_TIME">
+                      <shadow type="math_number" id="Hw}j)jtK~wF1pT+A{8Hj">
+                        <field name="NUM">100</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
